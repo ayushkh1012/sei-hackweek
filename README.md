@@ -1,0 +1,1 @@
+This repository is meant for the sei-hackweek 2024
