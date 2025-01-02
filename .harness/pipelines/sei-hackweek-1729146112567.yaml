@@ -1,0 +1,35 @@
+pipeline:
+  identifier: Build_ayushkh1012_sei_hackweek_1729146116708
+  name: Build sei-hackweek
+  orgIdentifier: default
+  projectIdentifier: SEI_DOCS
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github_OAuth_1729143881170
+        repoName: ayushkh1012/sei-hackweek
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          caching:
+            enabled: true
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI

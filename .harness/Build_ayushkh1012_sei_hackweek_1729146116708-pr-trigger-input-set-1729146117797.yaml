@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_ayushkh1012_sei_hackweek_1729146116708-pr-trigger-input-set
+  identifier: Build_ayushkh1012_sei_hackweek_1729146116708prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: SEI_DOCS
+  pipeline:
+    identifier: Build_ayushkh1012_sei_hackweek_1729146116708
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
